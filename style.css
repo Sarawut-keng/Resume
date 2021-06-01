@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400;700&display=swap');
+
+/* All Element */
+body {
+    padding-left: 100px;
+    padding-right: 100px;
+    /* position: relative; */
+}
+
+* {
+    color: white;
+    background-color: black;
+    font-family: 'JetBrains Mono', monospace;
+    scroll-behavior: smooth 0.5s;
+}
+
+
+/* Header */
+
+header {
+    text-align: right;
+    padding: 20px;
+}
+
+.animate__animated.animate__lightSpeedInLeft {
+    --animate-delay: 2s;
+    --animate-duration: 2s;
+  }
+
+/* Sidebar */
+
+nav {
+    float: left;
+    width: 16%;
+    padding-left: 108px;
+    left: 0;
+    height: fit-content;
+    position: fixed; 
+}
+
+/* Sidebar -- bullet*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+/* Sidebar -- space between list */
+
+nav ul li {
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+/* Sidebar -- style */
+
+nav ul li a:link {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: coral;
+    font-size: 25px;
+}
+
+nav ul li a i:hover {
+    text-decoration: none;
+    color: coral;
+    font-size: 25px;
+}
+
+
+/* Main -- layout size and colors */
+
+article {
+    float: right;
+    width: 80%;
+    height: fit-content;
+}
+
+article h1 {
+    font-size: 40px;
+}
+
+article p {
+    font-size: 18px;
+}
+
+/* Main -- space */
+
+article h1,
+p {
+    padding: 10px;
+}
+
+
+/* Main Data of Resume */
+
+.info {
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: 2px solid white;
+}
+
+.head {
+    display: inline;
+}
+
+.head i {
+    float: left;
+    font-size: 65px;
+}
+
+.head h1 {
+    padding-left: 1em;
+}
+
+/* Education */
+.education {
+    text-align: center;
+}
+.edu-break {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.education img {
+    padding: 10px;
+}
+.education p {
+    margin: 0;
+}
+.education h3 {
+    margin: 5px;
+}
+
+/* Skill */
+
+.soft-table {
+    width: 100%;
+    text-align: center;
+}
+.soft-table tr th {
+    width: 33%;
+    height: 100px;
+}
+.soft-table tr td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.soft-table tr th img {
+    width: 50%;
+}
+
+.com-table {
+    width: 100%;
+    text-align: center;
+}
+.com-table tr td {
+    width: 25%;
+    height: 100px;
+}
+.com-table i {
+    font-size: 50px;
+}
+
+
+.lang-table {
+    width: 100%;
+}
+.lang-table tr td {
+    height: 100px;
+}
+.lang-table img {
+    width: 20%;
+}
+
+/* Life long learning */
+.TheContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.TheContainer img {
+    width: 50%;
+}
+
+/* Contact */
+
+.containforcontact {
+    display: grid;
+    grid-template-columns: 30% 15% 5% 50%;
+    grid-template-rows: repeat(6, 2em);
+    font-size: 20px;
+}
+
+.icons {
+    text-align: right;
+    padding-right: 1em;
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+.icons > img {
+    width: 25px;
+    height: auto;
+}
+
+
+/* Footer --  layout size and color */
+
+footer {
+    clear: both;
+    text-align: center;
+    border-top: 2px solid white;
+}
+
+
+/* Setting footer --  space */
+
+footer h2 {
+    padding: 10px;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width:1040px) {
+    /* For mobile phones: */
+    body {
+        padding: 0;
+    }
+    .menu {
+        width: 100%;
+        height: 80px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #top {
+        text-align: center;
+        top: 0;
+        width: 100%;
+        float: left;
+        position: fixed;
+    }
+    .menu {
+        margin-top: 100px;
+        position: relative;
+    }
+    .list {
+        text-align: center;
+        padding: 0;
+        margin-top: 10px;
+        position: absolute;
+        position: fixed;
+    }
+    .list li {
+        display: inline-block;
+    }
+    .gif {
+        width: 100%;
+    }
+    .main {
+        padding-top: 200px;
+        width: 100%;
+    }
+    /* article img {
+        width: 100%;
+        height: auto;
+    } */
+}
